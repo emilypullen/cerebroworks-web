@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788" systemVersion="24E263" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="EntryData" representedClassName="EntryData" syncable="YES">
+        <attribute name="breakDuration" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="breakTime" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="completedTasks" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="job" optional="YES" attributeType="String"/>
+        <attribute name="manualDuration" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="tasks" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="JobData" representedClassName="JobData" syncable="YES" codeGenerationType="class">
+        <attribute name="nameJob" optional="YES" attributeType="String"/>
+        <attribute name="rate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rate1" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rate2" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rate3" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="rates" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="JobRate" inverseName="job" inverseEntity="JobRate"/>
+    </entity>
+    <entity name="JobRate" representedClassName="JobRate" syncable="YES" codeGenerationType="class">
+        <attribute name="rateAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rateType" optional="YES" attributeType="String"/>
+        <relationship name="job" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="JobData" inverseName="rates" inverseEntity="JobData"/>
+    </entity>
+    <entity name="MonthlyReflection" representedClassName="MonthlyReflection" syncable="YES">
+        <attribute name="refDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="refID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="refMood" optional="YES" attributeType="String"/>
+        <attribute name="refPrompt" optional="YES" attributeType="String"/>
+        <attribute name="refResponse" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="NonWorkActivity" representedClassName="NonWorkActivity" syncable="YES" codeGenerationType="class">
+        <attribute name="nonWorkDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="nonWorkHours" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="nonWorkId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nonWorkLabel" optional="YES" attributeType="String"/>
+        <attribute name="nonWorkTag" optional="YES" attributeType="String"/>
+        <attribute name="nonWorkWeekStart" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="TaskData" representedClassName="TaskData" syncable="YES">
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="taskId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="taskJob" optional="YES" attributeType="String"/>
+        <attribute name="taskName" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+</model>
