@@ -853,59 +853,58 @@
     <div class="div"></div>
     <p class="section-title">Plans &amp; Pricing</p>
 
-    <div class="tier-grid">
+    <!-- Tier grid: 2 columns for paid tiers, each showing monthly + annual -->
+    <div class="tier-grid" style="grid-template-columns: repeat(3,1fr)">
 
+      <!-- Free -->
       <div class="tier-card">
-        <p class="tier-name">Free</p>
+        <p class="tier-name">Free Preview</p>
         <div class="tier-price">$0</div>
         <p class="tier-sub">No credit card required</p>
         <div class="tier-divider"></div>
         <ul class="tier-feat">
-          <li><span class="ck">✓</span> Save up to 10 papers</li>
-          <li><span class="ck">✓</span> 5 reading sessions per month</li>
-          <li><span class="ck">✓</span> Basic notes &amp; ratings</li>
-          <li><span class="ck">✓</span> Browse research catalog</li>
-          <li><span class="xx">✗</span> <span class="dim">Unlimited library</span></li>
-          <li><span class="xx">✗</span> <span class="dim">Unlimited sessions</span></li>
-          <li><span class="xx">✗</span> <span class="dim">Reading streaks &amp; insights</span></li>
-          <li><span class="xx">✗</span> <span class="dim">Export &amp; share</span></li>
+          <li><span class="ck">✓</span> Browse the research catalog</li>
+          <li><span class="ck">✓</span> Preview articles</li>
+          <li><span class="xx">✗</span> <span class="dim">Full discovery &amp; library</span></li>
+          <li><span class="xx">✗</span> <span class="dim">Notes &amp; reading sessions</span></li>
+          <li><span class="xx">✗</span> <span class="dim">Personalized recommendations</span></li>
+          <li><span class="xx">✗</span> <span class="dim">Cross-device access</span></li>
+          <li><span class="xx">✗</span> <span class="dim">Weekly digest &amp; insights</span></li>
+          <li><span class="xx">✗</span> <span class="dim">Compare reads</span></li>
         </ul>
-        <span class="tier-btn secondary">Get started free</span>
+        <span class="tier-btn secondary">Free to download</span>
       </div>
 
+      <!-- Quanta -->
       <div class="tier-card featured" style="position:relative">
         <span class="tier-popular">Most Popular</span>
-        <p class="tier-name">Quanta Plus — Monthly</p>
-        <div class="tier-price"><sup>$</sup>4<span>.99 / mo</span></div>
-        <p class="tier-sub">Billed monthly · Cancel anytime</p>
+        <p class="tier-name">Quanta</p>
+        <div class="tier-price"><sup>$</sup>3<span>.99 / mo</span></div>
+        <p class="tier-sub">or <strong>$24.99 / yr</strong> — save ~48%</p>
         <div class="tier-divider"></div>
         <ul class="tier-feat">
-          <li><span class="ck">✓</span> <strong>Unlimited</strong> saved papers</li>
-          <li><span class="ck">✓</span> <strong>Unlimited</strong> reading sessions</li>
-          <li><span class="ck">✓</span> Full notes, tags &amp; ratings</li>
-          <li><span class="ck">✓</span> Reading streaks &amp; insights</li>
-          <li><span class="ck">✓</span> Export &amp; share your library</li>
-          <li><span class="ck">✓</span> Priority support</li>
-          <li><span class="ck">✓</span> Early access to new features</li>
-          <li><span class="ck">✓</span> iCloud backup</li>
+          <li><span class="ck">✓</span> Full discovery, library, notes, reading sessions, and history</li>
+          <li><span class="ck">✓</span> Personalized recommendations and reading workflow</li>
+          <li><span class="ck">✓</span> Cross-device access on iPhone, iPad, and Mac</li>
+          <li><span class="xx">✗</span> <span class="dim">Weekly digest &amp; premium article insight</span></li>
+          <li><span class="xx">✗</span> <span class="dim">Compare reads &amp; higher-signal decision tools</span></li>
         </ul>
         <span class="tier-btn primary">Join waitlist</span>
       </div>
 
+      <!-- Quanta Pro -->
       <div class="tier-card">
-        <p class="tier-name">Quanta Plus — Annual</p>
-        <div class="tier-price"><sup>$</sup>34<span>.99 / yr</span></div>
-        <p class="tier-sub">~$2.92/mo · Save 42% vs monthly</p>
+        <p class="tier-name">Quanta Pro</p>
+        <div class="tier-price"><sup>$</sup>6<span>.99 / mo</span></div>
+        <p class="tier-sub">or <strong>$44.99 / yr</strong> — save ~46%</p>
         <div class="tier-divider"></div>
         <ul class="tier-feat">
-          <li><span class="ck">✓</span> Everything in Monthly</li>
-          <li><span class="ck">✓</span> <strong>Unlimited</strong> saved papers</li>
-          <li><span class="ck">✓</span> <strong>Unlimited</strong> reading sessions</li>
-          <li><span class="ck">✓</span> Reading streaks &amp; insights</li>
-          <li><span class="ck">✓</span> Export &amp; share your library</li>
-          <li><span class="ck">✓</span> Priority support</li>
-          <li><span class="ck">✓</span> Early access to new features</li>
-          <li><span class="ck">✓</span> iCloud backup</li>
+          <li><span class="ck">✓</span> Everything in Quanta</li>
+          <li><span class="ck">✓</span> Full discovery, library, notes, reading sessions, and history</li>
+          <li><span class="ck">✓</span> Personalized recommendations and reading workflow</li>
+          <li><span class="ck">✓</span> Cross-device access on iPhone, iPad, and Mac</li>
+          <li><span class="ck">✓</span> Weekly digest and premium article insight</li>
+          <li><span class="ck">✓</span> Compare reads and higher-signal decision tools</li>
         </ul>
         <span class="tier-btn primary">Join waitlist</span>
       </div>
@@ -914,12 +913,12 @@
 
     <div class="sub-terms">
       <h4>Subscription Terms — Required Disclosure</h4>
-      <p>Prices shown are in USD. Actual pricing in your local currency is displayed at the time of purchase in the App Store and may vary by region.</p>
-      <p>Payment will be charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period. Your account will be charged for renewal within 24 hours prior to the end of the current period at the same price.</p>
-      <p>You can manage and cancel your subscription at any time by going to your Apple ID account settings in the App Store. Cancelling stops future charges; access continues until the end of the current paid period. No refunds are issued for partial periods except as required by applicable law.</p>
-      <p>Any unused portion of a free trial, if offered, will be forfeited when you purchase a Quanta Plus subscription.</p>
-      <p>CerebroWorks reserves the right to change subscription prices. Price changes will be communicated in advance, and you will be asked to confirm the new price before your subscription renews at the new rate.</p>
-      <p>By subscribing, you agree to Apple's <a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html" target="_blank" rel="noopener">Terms of Service</a> and CerebroWorks' Privacy Policy below.</p>
+      <p>Quanta and Quanta Pro are offered as <strong>monthly or yearly auto-renewing subscriptions</strong>. Pricing is displayed in your local currency at the time of purchase in the App Store.</p>
+      <p>Payment will be charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours prior to the end of the current period at the confirmed price.</p>
+      <p>You can manage or cancel your subscription at any time in <strong>iOS Settings → [Your Name] → Subscriptions</strong>. Cancelling stops future charges; access to paid features continues until the end of the current paid period. No refunds are issued for unused portions of a subscription period, except as required by applicable law.</p>
+      <p>Any unused portion of a free trial period, if offered at launch, will be forfeited when you purchase a monthly or yearly subscription.</p>
+      <p>CerebroWorks reserves the right to change subscription prices. You will be notified of price changes before they take effect, and your subscription will not renew at a new price without your confirmation.</p>
+      <p>By subscribing, you agree to <a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html" target="_blank" rel="noopener">Apple's Terms of Service</a> and the CerebroWorks Privacy Policy on this page.</p>
     </div>
 
     <div class="div"></div>
